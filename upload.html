@@ -38,13 +38,15 @@
       <div class="header-top-inner">
         <div class="cnt-account">
           <ul class="list-unstyled">
-            <li><a href="#"><i class="icon fa fa-user"></i>My Account</a></li>
-            <li><a href="#"><i class="icon fa fa-heart"></i>Wishlist</a></li>
-            <li><a href="#"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
-            <li><a href="#"><i class="icon fa fa-check"></i>Checkout</a></li>
+          
+            <li><a href="my-wishlist.html"><i class="icon fa fa-heart"></i>Wishlist</a></li>
+            <li><a href="my-wishlist.html"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
+            
 
             <!-- làm giao diện đăng nhập -->
             <li onclick="window.location.href='sign-in.html';"><a href="#"><i class="icon fa fa-lock"></i>Login</a></li>
+            <li><a href="#"><i class="icon fa fa-user"></i>Dennis</a></li>
+            <li><a href="#">Log out</a></li>
           </ul>
         </div>
         <!-- /.cnt-account -->
@@ -365,6 +367,7 @@
   <!-- ============================================== NAVBAR : END ============================================== --> 
   
 </header>
+
 
 <div class="body-content outer-top-xs" id="top-banner-and-menu">
   <div class="container">
@@ -737,6 +740,8 @@
   <textarea id="product-description" name="product-description"></textarea>
 
   <label for="product-image">Chọn file:</label>
+  <input type="file" id="product-image" name="product-image">
+  <input type="file" id="product-image" name="product-image">
   <input type="file" id="product-image" name="product-image">
 
   <button type="submit">Upload sản phẩm</button>
