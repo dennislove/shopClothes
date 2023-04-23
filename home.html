@@ -1576,8 +1576,12 @@
                           <div class="action">
                             <ul class="list-unstyled">
                               <li class="add-cart-button btn-group">
-                                <button data-toggle="tooltip" class="btn btn-primary icon" type="button" title="Add Cart"> <i class="fa fa-shopping-cart"></i> </button>
-                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                <button id="add-button" class="btn btn-primary icon" data-toggle="dropdown" type="button">
+                                  <a href="sign-in.html"> <i class="fa fa-shopping-cart"></i></a> </button>
+                                <button id="add-button" class="btn btn-primary cart-btn" type="button"><a href="sign-in.html"> Add to cart</a></button>
+
+                                <!-- Hiển thị login khi click Add cart -->
+                                
                               </li>
                               <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
                               <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
@@ -3465,7 +3469,28 @@
     <!-- /.logo-slider --> 
     <!-- ============================================== BRANDS CAROUSEL : END ============================================== --> 
   </div>
+  
   <!-- /.container --> 
+  <div id="overlay">
+    <div id="close-login">
+      <img id="close-img" src="assets/images/close.png" alt="">
+    </div>
+    <div id="login-form">
+      <h2>Bạn phải đăng nhập</h2>
+
+      <form>
+        <!-- <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required> -->
+        <button type="submit">
+          <a href="sign-in.html">
+          Đăng nhập</a>
+        </button>
+      </form>
+    </div>
+  </div>
+
 </div>
 <!-- /#top-banner-and-menu --> 
 
@@ -3610,5 +3635,6 @@
 <script src="assets\js\bootstrap-select.min.js"></script> 
 <script src="assets\js\wow.min.js"></script> 
 <script src="assets\js\scripts.js"></script>
+<script src="assets\js\showFrom.js"></script>
 </body>
 </html>
