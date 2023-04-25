@@ -1,4 +1,5 @@
 .wrapper  {
+  display: block;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -11,7 +12,7 @@
   }
   
 #product-form {
-    display: inline-block;
+   
     flex-direction: column;
     align-items: center;
     padding: auto;
@@ -25,7 +26,7 @@
     font-size: 16px;
   }
   #product-form input, textarea{
-    width: 140%;
+    width: 90%;
   }
   #product-form select{
     width: 150px;
@@ -55,3 +56,60 @@
     background-color: #3e8e41;
   }
   
+  .name-type, .select-item{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -40px;
+  }
+
+  .name-price{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -80px;
+  }
+  .space{
+    width: 30px;
+  }
+  .price-input{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ff9494;
+    cursor: pointer;
+  }
+  
+  .tag:hover {
+    background-color: #ddd;
+  }
+  
+  #tags-input {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #clear-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+#clear-btn:hover {
+  background-color: #ddd;
+}
