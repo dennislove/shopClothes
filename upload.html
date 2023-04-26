@@ -719,12 +719,12 @@
       </div>
       <div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder "> 
         <div class="wrapper">
-            <form id="product-form">
+            <form class="product-form">
   <label for="product-name">Tên sản phẩm:</label>
-  <input type="text" id="product-name" name="product-name">
+  <input type="text" class="product-name" name="product-name">
 
   <label for="product-quantity">Số lượng:</label>
-  <input type="text" id="product-quantity" name="product-quantity">
+  <input type="text" class="product-quantity" name="product-quantity">
 
   <div class="name-type">
     <label for="product-id-type">Mã danh mục:</label>
@@ -733,7 +733,7 @@
   
   <div class="select-item">
 
-  <select id="product-id-type" name="product-id-type">
+  <select class="product-id-type" name="product-id-type">
     <option value="id1">1</option>
     <option value="id2">2</option>
     <option value="id3">3</option>
@@ -743,7 +743,7 @@
     <option value="id7">7</option>
   </select>
 
-  <select id="product-type" name="product-type">
+  <select class="product-type" name="product-type">
     <option value="ao">Áo</option>
     <option value="quan">Quần</option>
     <option value="glass">Mắt kính</option>
@@ -761,8 +761,6 @@
 </div>
   
 <div class="price-input">
-
-
   <input type="text" id="product-price-old" name="product-price">
 <div class="space"></div>
   <input type="text" id="product-price-new" name="product-price">
@@ -770,15 +768,18 @@
 
   <label>Chọn các thẻ tag:</label>
   <div class="tags">
-    <span class="tag" onclick="addTag('áo')">áo</span>
-    <span class="tag" onclick="addTag('quần')">quần</span>
-    <span class="tag" onclick="addTag('giày')">giày</span>
+   
+  <select class="product-tags" name="product-tags">
+    <option value="new">New</option>
+    <option value="hot">Hot</option>
+    <option value="sale">Sale</option>
+   
+  </select>
   </div>
-  <input type="text" id="tags-input" placeholder="Các thẻ tag sẽ được chèn vào đây">
-  <button class="clear-btn" >Xóa</button>
+ 
 
   <label for="product-description">Mô tả:</label>
-  <textarea id="product-description" name="product-description"></textarea>
+  <textarea class="product-description" name="product-description"></textarea>
 
   <label for="product-image">Chọn ảnh:</label>
   <input type="file" id="product-image" name="product-image">
@@ -804,7 +805,7 @@
           <!-- /.module-heading -->
           
           <div class="module-body">
-            <ul class="toggle-footer" style="">
+            <ul class="toggle-footer">
               <li class="media">
                 <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span> </div>
                 <div class="media-body">
